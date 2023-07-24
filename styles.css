@@ -1,0 +1,76 @@
+html,
+body{
+    height:100%;
+    font-family: 'Poppins', sans-serif;
+}
+*
+{
+    margin:0;
+    padding:0;
+}
+#stopwatch{
+    position:relative;
+    top:50px;
+    align-items: center;
+    margin:0 auto;
+    display:grid;
+    width:250px;
+    height:250px;
+    background-color: rgb(218,165,32);
+    border-radius:50%;
+    color:White;
+    text-align: center;
+    grid-column-gap:12px;
+    align-content: center;
+    justify-content: center;
+    grid-template-areas:
+    "header header header"
+    "timer timer timer"
+    "start stop reset";
+    box-shadow: 0 0 0  2rem rgb(120, 106, 72)
+}
+    
+h1{
+    margin:-20px 0 0 0;
+    grid-area:header;
+    font-weight:700;
+}
+
+button{
+    padding:0.5rem 0.7rem;
+    border-radius:8px;
+    background: transparent;
+    font-size: 16px;
+    cursor: pointer;
+    border:.1rem solid black;
+    color:white;
+    font-weight:700;
+  
+}
+button:hover{
+    background-color: rgb(195, 194, 180);
+}
+
+button:disabled{
+    cursor:default;
+}
+#start-button{
+    grid-area:start;
+}
+
+#stop-button{
+    grid-area:stop;
+}
+
+#reset-button{
+    grid-area:reset;
+}
+
+#timer{
+    margin:12px;
+    font-size:2.3rem;
+    font-weight:bold;
+    font-family:monospace;
+    grid-area:timer;
+}
+   
